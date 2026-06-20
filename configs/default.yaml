@@ -1,0 +1,24 @@
+# Global defaults — copy or override per run/scenario
+
+simulation:
+  town: Town03          # standardize on one map for all scenarios
+  fixed_delta_seconds: 0.1   # 10 Hz
+  synchronous_mode: true
+
+carla:
+  host: localhost
+  port: 2000
+  timeout: 10.0
+
+perception:
+  noise_std_pos: 0.0   # meters; set >0 in Phase 2
+  noise_std_vel: 0.0   # m/s
+
+planning:
+  mode: prediction_aware   # prediction_aware | reactive
+  safety_margin_m: 1.0
+
+predictor:
+  checkpoint: predictor/checkpoints/best.pt
+  history_steps: 8
+  future_steps: 12

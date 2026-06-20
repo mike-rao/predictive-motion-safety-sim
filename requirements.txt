@@ -1,0 +1,13 @@
+# Core (install after CARLA Python API — see docs/SETUP.md)
+numpy>=1.24,<2.0
+pandas>=2.0
+matplotlib>=3.7
+pyyaml>=6.0
+torch>=2.0
+pyarrow>=14.0          # parquet I/O for trajectory logs
+pytest>=7.0            # unit tests (planning module)
+
+# CARLA: install from the .whl bundled with your CARLA release, NOT from PyPI:
+#   pip install /path/to/CARLA/PythonAPI/carla/dist/carla-0.9.15-*.whl
+#
+# Scenario Runner: clone separately and add to PYTHONPATH (see docs/SETUP.md)

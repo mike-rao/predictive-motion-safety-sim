@@ -1,0 +1,24 @@
+# Example scenario config — copy to scenarios/generated/ and fill in values.
+# See scenarios/generate_scenarios.py (Phase 1) for bulk generation.
+
+id: ped_crossing_001
+template: ped_crossing_midblock
+town: Town03
+seed: 42
+
+params:
+  ego_speed_mps: 8.0
+  ped_cross_start_time_s: 2.0
+  ped_cross_speed_mps: 1.4
+  lateral_offset_m: 0.5
+
+spawn:
+  ego:
+    x: 0.0
+    y: 0.0
+    z: 0.5
+    yaw: 0.0
+  # Alternative: use CARLA spawn index instead of coordinates
+  # ego_spawn_index: 12
+
+timeout_s: 30
